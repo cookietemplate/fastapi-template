@@ -6,8 +6,7 @@
         "graphql"
     ],
     "db_info": {
-        "name": "sqlite",
-        "port": "5432"
+        "type": "string"
     },
     "enable_redis": [
         "False",
