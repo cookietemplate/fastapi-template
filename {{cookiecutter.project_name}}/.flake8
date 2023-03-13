@@ -1,0 +1,20 @@
+[flake8]
+extend-ignore = F401
+max-line-length = 120
+exclude = .git,__pycache__,docs/source/conf.py,old,build,dist
+
+exclude =
+  ./.cache,
+  ./.git,
+  ./.idea,
+  ./.mypy_cache,
+  ./.pytest_cache,
+  ./.venv,
+  ./venv,
+  ./env,
+  ./cached_venv,
+  ./docs,
+  ./deploy,
+  ./var,
+  ./.vscode,
+  *migrations*,
