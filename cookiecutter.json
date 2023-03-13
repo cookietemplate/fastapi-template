@@ -1,61 +1,78 @@
 {
-    "project_name": {
-        "type": "string"
-    },
-    "api_type": {
-        "type": "dict"
-    },
+    "project_name": "untitled project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "api_type": [
+        "rest",
+        "graphql"
+    ],
     "db_info": {
-        "type": "dict"
+        "name": "sqlite",
+        "port": "5432"
     },
-    "enable_redis": {
-        "type": "bool"
-    },
-    "enable_rmq": {
-        "type": "bool"
-    },
-    "ci_type": {
-        "type": "string"
-    },
-    "enable_migrations": {
-        "type": "bool"
-    },
-    "enable_kube": {
-        "type": "bool"
-    },
-    "kube_name": {
-        "type": "string"
-    },
-    "enable_routers": {
-        "type": "bool"
-    },
-    "enable_kafka": {
-        "type": "bool"
-    },
-    "enable_loguru": {
-        "type": "bool"
-    },
-    "traefik_labels": {
-        "type": "bool"
-    },
-    "add_dummy": {
-        "type": "bool"
-    },
-    "orm": {
-        "type": "str"
-    },
-    "self_hosted_swagger": {
-        "type": "bool"
-    },
-    "prometheus_enabled": {
-        "type": "bool"
-    },
-    "sentry_enabled": {
-        "type": "bool"
-    },
-    "otlp_enabled": {
-        "type": "bool"
-    },
+    "enable_redis": [
+        "False",
+        "True"
+    ],
+    "enable_rmq": [
+        "False",
+        "True"
+    ],
+    "ci_type": [
+        "github",
+        "gitlab_ci"
+    ],
+    "enable_migrations": [
+        "False",
+        "True"
+    ],
+    "enable_kube": [
+        "False",
+        "True"
+    ],
+    "kube_name": "{{ cookiecutter.project_slug }}",
+    "enable_routers": [
+        "False",
+        "True"
+    ],
+    "enable_kafka": [
+        "False",
+        "True"
+    ],
+    "enable_loguru": [
+        "False",
+        "True"
+    ],
+    "traefik_labels": [
+        "False",
+        "True"
+    ],
+    "add_dummy": [
+        "False",
+        "True"
+    ],
+    "orm": [
+        "sqlalchemy",
+        "ormar",
+        "tortoise",
+        "psycopg",
+        "piccolo"
+    ],
+    "self_hosted_swagger": [
+        "False",
+        "True"
+    ],
+    "prometheus_enabled": [
+        "False",
+        "True"
+    ],
+    "sentry_enabled": [
+        "False",
+        "True"
+    ],
+    "otlp_enabled": [
+        "False",
+        "True"
+    ],
     "_extensions": [
         "cookiecutter.extensions.RandomStringExtension"
     ],

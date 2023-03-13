@@ -1,0 +1,9 @@
+{
+    "{{cookiecutter.project_slug}}/db": [
+        "{{cookiecutter.project_slug}}/db_sa",
+        "{{cookiecutter.project_slug}}/db_ormar",
+        "{{cookiecutter.project_slug}}/db_tortoise",
+        "{{cookiecutter.project_slug}}/db_psycopg",
+        "{{cookiecutter.project_slug}}/db_piccolo"
+    ]
+}
